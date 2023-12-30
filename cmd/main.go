@@ -8,6 +8,9 @@ func main() {
 	handler := controller.NewHandler()
 	app := handler.InitRoutes()
 
-	app.Listen(":8080")
-
+	err := app.Listen(":8080")
+	if err != nil {
+		app.Shutdown()
+		panic(err)
+	}
 }
