@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"time_boost/view/home"
+	"time_boost/internal/view/home"
 
 	"github.com/labstack/echo/v4"
 )
